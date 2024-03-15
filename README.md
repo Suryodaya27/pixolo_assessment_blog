@@ -16,8 +16,8 @@ To set up and use the RESTful API for the simple blogging platform, follow these
 
 4. **Testing Endpoints:**
    - Use tools like Postman to test each endpoint for CRUD operations on blog posts.
-   - Send requests to endpoints like `GET /posts`, `POST /posts`, `PUT /posts/:id`, and `DELETE /posts/:id`.
+   - Send requests to endpoints like `GET /blogs`, `POST /create`, `PUT /update`, and `DELETE /delete`.
 
 5. **Documentation:**
-   - Refer to the comprehensive API documentation provided in the `docs` folder for detailed information on each endpoint.
+   - Docs link : [Link](https://docs.google.com/document/d/1gzQD0NVEY0duN68wL836SfImdR0gLvpd6rWw4msa0EM/edit?usp=sharing)
    - Explore examples of sample requests and responses to understand how to interact with the API effectively.

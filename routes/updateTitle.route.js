@@ -8,7 +8,7 @@ router.put('/updateTitle', verifyToken, async(req, res) => {
     const {blogId,title} = req.body;
     try {
         const result = await updateTitle(blogId,title);
-        res.status(201).send(result);
+        res.status(200).send(result);
     }
     catch (error) {
         res.status(error.status || 500 ).send(error.message || "Internal Server Error. Please try again.");
