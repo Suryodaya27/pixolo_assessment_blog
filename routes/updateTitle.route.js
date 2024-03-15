@@ -4,7 +4,7 @@ const router = require('express').Router();
 
 const {updateTitle} = require('../controllers/updateTitle.controllers')
 
-router.post('/updateTitle', verifyToken, async(req, res) => {
+router.put('/updateTitle', verifyToken, async(req, res) => {
     const {blogId,title} = req.body;
     try {
         const result = await updateTitle(blogId,title);

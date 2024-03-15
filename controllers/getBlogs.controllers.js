@@ -4,7 +4,7 @@ const getBlogs = async (userId) => {
     try {
         const result = await prisma.blog.findMany({
             where: {
-                userId: userId
+                authorId: userId
             }
         });
         return result;

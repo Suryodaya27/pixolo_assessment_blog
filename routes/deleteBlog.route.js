@@ -4,7 +4,7 @@ const router = require('express').Router();
 
 const {deleteBlog} = require('../controllers/deleteBlog.controllers')
 
-router.post('/delete', async(req, res) => {
+router.delete('/delete',verifyToken, async(req, res) => {
     const {blogId} = req.body;
     try {
         const result = await deleteBlog(blogId);
